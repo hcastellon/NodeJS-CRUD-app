@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../database');
 
 router.get('/user-list', (req, res) => {
-  const sql = 'SELECT * FROM users';
+  const sql = 'SELECT * from user_list1';
   db.query(sql, (err, data) => {
     console.log(data);
     if (err) throw err;
