@@ -8,19 +8,18 @@
     <h2>Display Data using Node.js & MySQL</h2>
     <table border="1">
       <tr>
-        
-        <th>ID</th>        
-        <th>fullName</th>        
-        <th>emailAddress</th>        
+        <th>ID</th>
+        <th>fullName</th>
+        <th>emailAddress</th>
         <th>City</th>
         <th>Country</th>
       </tr>
       <% if (userData.length !== 0) { %>
         <% userData.forEach(function(data, index) { %>
-          <tr>            
-            <td><%= data.ID %></td>            
-            <td><%= data.fullName %></td>            
-            <td><%= data.emailAddress %></td>            
+          <tr>
+            <td><%= data.ID %></td>
+            <td><%= data.fullName %></td>
+            <td><%= data.emailAddress %></td>
             <td><%= data.City %></td>
             <td><%= data.Country %></td>
           </tr>
